@@ -22,6 +22,7 @@ def play_round(p1_deck, p2_deck, table):
             x,y = p1_deck.pop(0), p2_deck.pop(0)          
             card_comparison(x, y, p1_deck, p2_deck, table)
             print("")
+            input("Press enter to continue")
 
 def card_comparison(p1_card, p2_card, p1_deck, p2_deck, table):
     print(f"Player 1 played {p1_card}")
