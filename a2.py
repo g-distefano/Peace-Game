@@ -12,6 +12,8 @@ table = []
 
 def play_round(p1_deck, p2_deck, table):                         
     while len(p1_deck) != 0 or len(p2_deck) != 0:    
+        print(f"Player 1 has {len(p1_deck)} cards")
+        print(f"Player 2 has {len(p2_deck)} cards")
         if len(p2_deck) == 0:
             print("PLAYER 1 WINS!")
             break
