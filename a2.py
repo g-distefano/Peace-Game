@@ -64,8 +64,8 @@ def war(p1_deck, p2_deck, table):
                 print("Draw! The war continues!")
                 war(p1_deck, p2_deck, table)                             
     if len(p1_deck) > 4 and len(p2_deck) > 4:
-        for card in [0,1,2,3]:                                 
-           x, y = p1_deck[card], p2_deck[card]
+        for _ in range(4):                                 
+           x, y = p1_deck[0], p2_deck[0]
            table.append(x)
            table.append(y)
            p1_deck.remove(x)
